@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from phone_field import PhoneField
+#from phone_field import PhoneField
 
 
 class State(models.Model):
@@ -56,7 +56,7 @@ class Common_info(models.Model):   #DJANGO/PYTHON POWER
     area = models.ForeignKey(Area,on_delete=models.CASCADE,default="")
     address = models.CharField(max_length=30,default="")
     email   = models.EmailField(default="")
-    mobile  = PhoneField(blank=True, help_text='Contact phone number',default="")
+   # mobile  = PhoneField(blank=True, help_text='Contact phone number',default="")
 
     class Meta:
         abstract = True
@@ -143,7 +143,7 @@ class Retailer(Common_info):   # use Business Listing Services
 class Customer(models.Model):
     name = models.CharField(max_length=50,default="")
     email   = models.EmailField(default="")
-    mobile  = PhoneField(help_text='Contact phone number',default="")
+   # mobile  = PhoneField(help_text='Contact phone number',default="")
 
     def __str__(self):
         return self.name
