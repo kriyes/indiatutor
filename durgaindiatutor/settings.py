@@ -25,16 +25,12 @@ SECRET_KEY = '-przje8!=m@o90-b6lqgv3z9orwr&hgy9u7z0zidl*++p@&-wh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
-    'phone_field',
-    'student',
-    'tutor',
-    'crm',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -123,9 +119,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS =[
-    os.path.join(BASE_DIR,'static')
-]
+# STATICFILES_DIRS =[
+#     os.path.join(BASE_DIR,'static')
+# ]
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
