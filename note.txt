@@ -1,0 +1,16 @@
+note 
+..
+user 
+role 
+tutor 
+student 
+
+institute list 
+list
+
+
+
+.............
+reg ,login
+profile
+post job git 
